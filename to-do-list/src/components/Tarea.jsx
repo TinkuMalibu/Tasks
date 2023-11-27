@@ -1,15 +1,16 @@
 import React from 'react';
 import '../stylesheets/Tarea.css';
+import { AiTwotoneCloseCircle } from "react-icons/ai";
 
 
-  const Tarea = ( {texto} ) => {
+  const Tarea = ( {texto, completada } ) => {
     return (
-      <div className="tarea-contenedor">
+      <div className={completada ? 'tarea-contenedor completada': 'tarea-contenedor'}>
         <div className="tarea-texto">
           {texto}
         </div>
-        <div className="tarea-icono">
-          eliminar
+        <div className='tarea-contenedor-iconos'>
+        <AiTwotoneCloseCircle className="tarea-icono" />
         </div>
       </div>
     );

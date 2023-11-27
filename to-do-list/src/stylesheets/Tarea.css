@@ -1,14 +1,13 @@
   .tarea-contenedor {
     width: 500px;
     height: 65px;
-    background-color: #cdb4db;
+    background-color: #7209b7;
     margin: 5px 0;
     padding: 8px 15px 8px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 7px;
-    border: 1px solid white;
     cursor: pointer;
   }
 
@@ -25,4 +24,9 @@
     width: 25px;
     height: 25px;
     margin: 5px;
+  }
+
+  .tarea-contenedor.completada {
+    background-color: #560bad;
+    text-decoration: line-through;
   }
