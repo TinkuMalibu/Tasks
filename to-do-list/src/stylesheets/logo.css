@@ -1,0 +1,15 @@
+
+
+  /* Fotograma de película de la directora Chantal Ackerman */
+  .logo-contenedor {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .todo-logo{
+    width: 400px;
+
+  }

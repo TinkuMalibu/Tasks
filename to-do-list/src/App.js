@@ -1,14 +1,16 @@
 import './App.css';
-import Todolist from './images/Todolist.png';
+import LogoToDoList from './components/LogoToDoList.js';
+import Tarea from './components/Tarea.jsx'
 
 function App() {
   return (
-    <div className="aplicación-tareas">
-      <div className="logo-contenedor">
-        <img src={Todolist}
-        className='todo-logo'
-        alt='a woman working' />
+    <div className="aplicacion-tareas">
+      <LogoToDoList />
 
+      <div className='tareas-lista-principal'>
+        <h1>DO TO LIST</h1>
+        <Tarea
+        texto= 'Aprender react' />
       </div>
     </div>
   );
