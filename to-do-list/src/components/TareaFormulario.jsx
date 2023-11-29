@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../stylesheets/TareaFormulario.css'
 
 const TareaFormulario = (props) => {
+
+  const [input, setInput] = useState('');
+
+  const manejarCambio = e => {
+    setInput(e.target.value);
+  }
+
+  const manejarEnvio = e => {
+    e.preventDefault();
+      const tareaNueva = {
+      id: '3554',
+      texto:'input',
+      completada: false
+    }
+  }
+
   return (
-    <form className='tarea-formulario'>
+    <form
+    className='tarea-formulario'
+    onSubmit={ manejarEnvio } >
       <input
         className='tarea-input'
         type='text'
-        placeholder='insert your task'
+        placeholder='Write a task'
         name='texto'
+        onChange= {manejarCambio}
       />
       <button className='tarea-boton'>
         Add your task
@@ -17,5 +37,3 @@ const TareaFormulario = (props) => {
 }
 
 export default TareaFormulario;
-
-

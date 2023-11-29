@@ -1,0 +1,32 @@
+  /* estructura principal */
+  .tarea-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* campo de texto */
+  .tarea-input {
+    width: 352px;
+    font-size: 18px;
+    background-color: #e0aaff;
+    padding: 14px 32px 14px 16px;
+    border: 2px solid #8b85c1;
+    outline: none;
+    color: #fff;
+    text-transform: capitalize;
+  }
+
+  .tarea-boton {
+    padding: 16px;
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background-color: #7b2cbf;
+    color: #fff;
+    text-transform: capitalize;
+  }
