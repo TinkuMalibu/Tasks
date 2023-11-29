@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import LogoToDoList from './components/LogoToDoList.js';
 import Tarea from './components/Tarea.jsx'
 import ListaDeTareas from './components/ListaDeTareas.jsx';

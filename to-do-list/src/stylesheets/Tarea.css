@@ -1,7 +1,7 @@
   .tarea-contenedor {
     width: 500px;
     height: 65px;
-    background-color: #7209b7;
+    background-color: rgb(119, 183, 9);
     margin: 5px 0;
     padding: 8px 15px 8px 20px;
     display: flex;
