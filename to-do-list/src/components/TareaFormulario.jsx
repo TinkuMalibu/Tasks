@@ -11,7 +11,7 @@ const TareaFormulario = (props) => {
 
   const manejarCambio = e => {
     setInput(e.target.value);
-  }
+  };
 
   const manejarEnvio = e => {
     e.preventDefault();
@@ -22,12 +22,12 @@ const TareaFormulario = (props) => {
     }
 
     props.onSubmit(tareaNueva); /* onSubmit funciona como prop que luego se pasa como prop al formulario*/
-  }
+  };
 
   return (
     <form
     className='tarea-formulario'
-    onSubmit={ manejarEnvio } > 
+    onSubmit={ manejarEnvio } >
       <input
         className='tarea-input'
         type='text'
